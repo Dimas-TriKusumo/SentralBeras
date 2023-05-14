@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="org.d3if2129.sentralberas.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_rajaleleFragment"
+            app:destination="@id/rajaleleFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_saniaFragment"
+            app:destination="@id/saniaFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_pandanwangiFragment"
+            app:destination="@id/pandanwangiFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_maknyussFragment"
+            app:destination="@id/maknyussFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_aizaFragment"
+            app:destination="@id/aizaFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_susuFragment"
+            app:destination="@id/susuFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_mentikwangiFragment"
+            app:destination="@id/mentikwangiFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_merahFragment"
+            app:destination="@id/merahFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="org.d3if2129.sentralberas.ui.info.InfoFragment"
+        android:label="Info"
+        tools:layout="@layout/fragment_info" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="org.d3if2129.sentralberas.ui.tentang.TentangFragment"
+        android:label="Tentang Kami"
+        tools:layout="@layout/fragment_tentang" />
+    <fragment
+        android:id="@+id/rajaleleFragment"
+        android:name="org.d3if2129.sentralberas.RajaleleFragment"
+        android:label="Detail Produk"
+        tools:layout="@layout/fragment_rajalele" />
+    <fragment
+        android:id="@+id/saniaFragment"
+        android:name="org.d3if2129.sentralberas.SaniaFragment"
+        android:label="fragment_sania"
+        tools:layout="@layout/fragment_sania" />
+    <fragment
+        android:id="@+id/pandanwangiFragment"
+        android:name="org.d3if2129.sentralberas.PandanwangiFragment"
+        android:label="fragment_pandanwangi"
+        tools:layout="@layout/fragment_pandanwangi" />
+    <fragment
+        android:id="@+id/maknyussFragment"
+        android:name="org.d3if2129.sentralberas.MaknyussFragment"
+        android:label="fragment_maknyuss"
+        tools:layout="@layout/fragment_maknyuss" />
+    <fragment
+        android:id="@+id/aizaFragment"
+        android:name="org.d3if2129.sentralberas.AizaFragment"
+        android:label="fragment_aiza"
+        tools:layout="@layout/fragment_aiza" />
+    <fragment
+        android:id="@+id/susuFragment"
+        android:name="org.d3if2129.sentralberas.SusuFragment"
+        android:label="fragment_susu"
+        tools:layout="@layout/fragment_susu" />
+    <fragment
+        android:id="@+id/mentikwangiFragment"
+        android:name="org.d3if2129.sentralberas.MentikwangiFragment"
+        android:label="fragment_mentikwangi"
+        tools:layout="@layout/fragment_mentikwangi" />
+    <fragment
+        android:id="@+id/merahFragment"
+        android:name="org.d3if2129.sentralberas.MerahFragment"
+        android:label="fragment_merah"
+        tools:layout="@layout/fragment_merah" />
+</navigation>
